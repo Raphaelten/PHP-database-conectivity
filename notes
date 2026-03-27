@@ -1,0 +1,5 @@
+$id = $_GET['id']; // Get user ID from the page post can not get data from the page 
+
+$result = mysqli_query($conn, "SELECT * FROM user WHERE ID='$id'");  ///the quarry select all from user tabel where ID is the one in the URL 
+$user = mysqli_fetch_assoc($result); /// defining the $user variable and soring data as array 
+
